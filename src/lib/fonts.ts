@@ -1,4 +1,10 @@
-import { Poppins, Lora } from 'next/font/google';
+import { Inter, Poppins, Lora } from "next/font/google";
+
+export const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
 
 export const poppins = Poppins({
   weight: ['600'],
@@ -14,4 +20,4 @@ export const lora = Lora({
   display: 'swap',
 });
 
-export const fontClassNames = `${poppins.variable} ${lora.variable}`;
+export const fontClassNames = `${inter.variable} ${poppins.variable} ${lora.variable}`;

@@ -12,7 +12,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white dark:bg-slate-900">
+    <div className="bg-white dark:bg-slate-900">
       <div className="px-6 py-24 sm:py-32 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <div className="flex flex-col items-center justify-center">

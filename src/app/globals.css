@@ -3,4 +3,5 @@
 @theme {
   --font-sans: var(--font-lora);
   --font-heading: var(--font-poppins);
+  --font-footer: var(--font-inter);
 }

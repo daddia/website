@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { GoogleTagManager } from "@next/third-parties/google";
+import { Footer } from "@/components/footer";
 import { fontClassNames } from "@/lib/fonts";
 import "./globals.css";
 
@@ -35,7 +36,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${fontClassNames} antialiased`}>
       {gtmId ? <GoogleTagManager gtmId={gtmId} /> : null}
-      <body className="min-h-screen">{children}</body>
+      <body className="flex min-h-screen flex-col">
+        <main className="flex-1">{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }
