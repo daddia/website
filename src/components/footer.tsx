@@ -17,6 +17,8 @@ const social = [
 ];
 
 export function Footer() {
+  const year = new Date().getFullYear();
+
   return (
     <footer className="font-footer bg-slate-900">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -36,7 +38,7 @@ export function Footer() {
             ))}
           </div>
           <p className="mt-8 text-center text-sm/6 text-slate-600 md:order-1 md:mt-0 dark:text-slate-400">
-            &copy; 2026 daddia. All rights reserved.
+            &copy; {year} daddia. All rights reserved.
           </p>
         </div>
       </div>
