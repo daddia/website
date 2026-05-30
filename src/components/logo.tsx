@@ -16,17 +16,8 @@ export function Logo({ className }: { className?: string }) {
     >
       {/* First letter d */}
       <motion.g
-        animate={
-          isHovered
-            ? {
-                scale: [1, 1.05, 1],
-                opacity: [1, 0.9, 1],
-              }
-            : {
-                scale: 1,
-                opacity: 1,
-              }
-        }
+        initial={{ scale: 1 }}
+        animate={isHovered ? { scale: [1, 1.05, 1] } : { scale: 1 }}
         transition={{
           duration: 0.4,
           ease: 'easeInOut',
@@ -45,17 +36,8 @@ export function Logo({ className }: { className?: string }) {
 
       {/* First letter a */}
       <motion.g
-        animate={
-          isHovered
-            ? {
-                scale: [1, 1.05, 1],
-                opacity: [1, 0.9, 1],
-              }
-            : {
-                scale: 1,
-                opacity: 1,
-              }
-        }
+        initial={{ scale: 1 }}
+        animate={isHovered ? { scale: [1, 1.05, 1] } : { scale: 1 }}
         transition={{
           duration: 0.4,
           ease: 'easeInOut',
@@ -74,17 +56,8 @@ export function Logo({ className }: { className?: string }) {
 
       {/* Second letter d */}
       <motion.g
-        animate={
-          isHovered
-            ? {
-                scale: [1, 1.05, 1],
-                opacity: [1, 0.9, 1],
-              }
-            : {
-                scale: 1,
-                opacity: 1,
-              }
-        }
+        initial={{ scale: 1 }}
+        animate={isHovered ? { scale: [1, 1.05, 1] } : { scale: 1 }}
         transition={{
           duration: 0.4,
           ease: 'easeInOut',
@@ -103,17 +76,8 @@ export function Logo({ className }: { className?: string }) {
 
       {/* Third letter d */}
       <motion.g
-        animate={
-          isHovered
-            ? {
-                scale: [1, 1.05, 1],
-                opacity: [1, 0.9, 1],
-              }
-            : {
-                scale: 1,
-                opacity: 1,
-              }
-        }
+        initial={{ scale: 1 }}
+        animate={isHovered ? { scale: [1, 1.05, 1] } : { scale: 1 }}
         transition={{
           duration: 0.4,
           ease: 'easeInOut',
@@ -132,17 +96,8 @@ export function Logo({ className }: { className?: string }) {
 
       {/* Letter i */}
       <motion.g
-        animate={
-          isHovered
-            ? {
-                scale: [1, 1.05, 1],
-                opacity: [1, 0.9, 1],
-              }
-            : {
-                scale: 1,
-                opacity: 1,
-              }
-        }
+        initial={{ scale: 1 }}
+        animate={isHovered ? { scale: [1, 1.05, 1] } : { scale: 1 }}
         transition={{
           duration: 0.4,
           ease: 'easeInOut',
@@ -161,17 +116,8 @@ export function Logo({ className }: { className?: string }) {
 
       {/* Second letter a */}
       <motion.g
-        animate={
-          isHovered
-            ? {
-                scale: [1, 1.05, 1],
-                opacity: [1, 0.9, 1],
-              }
-            : {
-                scale: 1,
-                opacity: 1,
-              }
-        }
+        initial={{ scale: 1 }}
+        animate={isHovered ? { scale: [1, 1.05, 1] } : { scale: 1 }}
         transition={{
           duration: 0.4,
           ease: 'easeInOut',
@@ -190,17 +136,8 @@ export function Logo({ className }: { className?: string }) {
 
       {/* Dot with special animation */}
       <motion.g
-        animate={
-          isHovered
-            ? {
-                scale: [1, 1.15, 1],
-                opacity: [1, 0.8, 1],
-              }
-            : {
-                scale: 1,
-                opacity: 1,
-              }
-        }
+        initial={{ scale: 1 }}
+        animate={isHovered ? { scale: [1, 1.15, 1] } : { scale: 1 }}
         transition={{
           duration: 0.4,
           ease: 'easeInOut',
