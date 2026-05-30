@@ -21,7 +21,9 @@ export default function Home() {
               {/* Text version - shown initially, hidden when JS loads */}
               <h1
                 className={`font-heading text-6xl font-semibold tracking-tight text-slate-700 sm:text-7xl dark:text-slate-50 transition-opacity duration-300 ${
-                  isLoaded ? 'opacity-0 absolute inset-0' : 'opacity-100'
+                  isLoaded
+                    ? 'pointer-events-none absolute inset-0 opacity-0'
+                    : 'opacity-100'
                 }`}
                 aria-hidden={isLoaded}
               >
@@ -30,7 +32,7 @@ export default function Home() {
 
               {/* SVG Logo - fades in when JS loads */}
               <div
-                className={`transition-opacity duration-500 ${
+                className={`relative z-10 transition-opacity duration-500 ${
                   isLoaded ? 'opacity-100' : 'opacity-0'
                 }`}
               >

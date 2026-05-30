@@ -8,7 +8,6 @@ export const metadata: Metadata = {
   title: "daddia",
   description: "Welcome to daddia",
   metadataBase: new URL("https://daddia.com"),
-  manifest: "/site.webmanifest",
   openGraph: {
     title: "daddia",
     description: "Welcome to daddia",
