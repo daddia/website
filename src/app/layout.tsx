@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { GoogleTagManager } from "@next/third-parties/google";
 import { fontClassNames } from "@/lib/fonts";
 import "./globals.css";
 
@@ -24,6 +25,8 @@ export const viewport: Viewport = {
   themeColor: "#4CA77F",
 };
 
+const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -31,6 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${fontClassNames} antialiased`}>
+      {gtmId ? <GoogleTagManager gtmId={gtmId} /> : null}
       <body className="min-h-screen">{children}</body>
     </html>
   );

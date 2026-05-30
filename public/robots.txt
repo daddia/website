@@ -1,10 +1,8 @@
 # robots.txt for daddia.com
-# https://www.daddia.com
+# https://daddia.com
 
 User-agent: *
 Allow: /
-Disallow: /admin/
-Disallow: /api/
 Disallow: /_next/static/development/
 Disallow: /_next/data/
 
@@ -17,4 +15,4 @@ Allow: /
 Crawl-delay: 10
 
 # Sitemap location
-Sitemap: https://www.daddia.com/sitemap.xml 
+Sitemap: https://daddia.com/sitemap.xml 
