@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-lora);
+  --font-heading: var(--font-poppins);
+}
