@@ -12,9 +12,8 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="bg-white dark:bg-slate-900">
-      <div className="px-6 py-24 sm:py-32 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
+    <div className="flex flex-1 flex-col items-center justify-center px-6 py-24 sm:py-32 lg:px-8">
+      <div className="mx-auto max-w-2xl text-center">
           <div className="flex flex-col items-center justify-center">
             {/* Progressive enhancement: Show text first, then replace with SVG */}
             <div className="relative">
@@ -54,7 +53,6 @@ export default function Home() {
             </noscript>
           </div>
         </div>
-      </div>
     </div>
   );
 }
